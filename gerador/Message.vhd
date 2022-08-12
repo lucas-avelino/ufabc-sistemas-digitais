@@ -13,9 +13,9 @@ BEGIN
 
   PROCESS (nextMessage, resetn)
     VARIABLE counter : INTEGER := - 1;
-    VARIABLE firstMessage : STD_LOGIC_VECTOR(0 TO 9) := "0001001101";
-    VARIABLE secondMessage : STD_LOGIC_VECTOR(0 TO 9) := "0101001111";
-    VARIABLE thirdMessage : STD_LOGIC_VECTOR(0 TO 9) := "1001000001";
+    VARIABLE firstMessage : STD_LOGIC_VECTOR(0 TO 9) := "0001001101";  -- 1100101001101
+    VARIABLE secondMessage : STD_LOGIC_VECTOR(0 TO 9) := "0101001111"; -- 0101101001111
+    VARIABLE thirdMessage : STD_LOGIC_VECTOR(0 TO 9) := "1001000001";  -- 0111001000001
   BEGIN
     IF resetn = '0' THEN
       counter := - 1;

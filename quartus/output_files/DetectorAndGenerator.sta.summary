@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -6.839
+TNS   : -442.979
+
+Type  : Slow 1100mV 85C Model Setup 'gerador:g|GeneratorController:control|state'
+Slack : -5.278
+TNS   : -145.407
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.221
+TNS   : -18.422
+
+Type  : Slow 1100mV 85C Model Hold 'gerador:g|GeneratorController:control|state'
+Slack : 0.832
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'clk'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'clk'
+Slack : -0.723
+TNS   : -9.135
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -106.276
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'gerador:g|GeneratorController:control|state'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -6.848
+TNS   : -448.388
+
+Type  : Slow 1100mV 0C Model Setup 'gerador:g|GeneratorController:control|state'
+Slack : -5.437
+TNS   : -150.844
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -2.336
+TNS   : -20.874
+
+Type  : Slow 1100mV 0C Model Hold 'gerador:g|GeneratorController:control|state'
+Slack : 0.827
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'clk'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'clk'
+Slack : -0.903
+TNS   : -11.474
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -107.232
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'gerador:g|GeneratorController:control|state'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.047
+TNS   : -132.222
+
+Type  : Fast 1100mV 85C Model Setup 'gerador:g|GeneratorController:control|state'
+Slack : -1.907
+TNS   : -41.565
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.925
+TNS   : -7.501
+
+Type  : Fast 1100mV 85C Model Hold 'gerador:g|GeneratorController:control|state'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'clk'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'clk'
+Slack : -0.224
+TNS   : -2.663
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.081
+TNS   : -7.484
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'gerador:g|GeneratorController:control|state'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.846
+TNS   : -119.328
+
+Type  : Fast 1100mV 0C Model Setup 'gerador:g|GeneratorController:control|state'
+Slack : -1.739
+TNS   : -37.402
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.948
+TNS   : -8.082
+
+Type  : Fast 1100mV 0C Model Hold 'gerador:g|GeneratorController:control|state'
+Slack : 0.326
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'clk'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'clk'
+Slack : -0.324
+TNS   : -3.977
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.082
+TNS   : -7.734
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'gerador:g|GeneratorController:control|state'
+Slack : 0.375
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,715 @@
+|DetectorAndGenerator
+clk => gerador:g.clk
+clk => Detector:d.clk
+resetn => gerador:g.resetn
+resetn => Detector:d.resetn
+valid_out << Detector:d.valid_out
+message[7] << Detector:d.seqdec[7]
+message[6] << Detector:d.seqdec[6]
+message[5] << Detector:d.seqdec[5]
+message[4] << Detector:d.seqdec[4]
+message[3] << Detector:d.seqdec[3]
+message[2] << Detector:d.seqdec[2]
+message[1] << Detector:d.seqdec[1]
+message[0] << Detector:d.seqdec[0]
+
+
+|DetectorAndGenerator|gerador:g
+clk => GeneratorController:control.clk
+clk => transmissor:t.clk
+resetn => GeneratorController:control.resetn
+resetn => Message:m.resetn
+resetn => transmissor:t.resetn
+seq <= transmissor:t.bitSerial
+
+
+|DetectorAndGenerator|gerador:g|GeneratorController:control
+clk => state.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+resetn => state.PRESET
+resetn => counter[0].ACLR
+resetn => counter[1].ACLR
+resetn => counter[2].ACLR
+resetn => counter[3].ACLR
+resetn => counter[4].ACLR
+resetn => counter[5].ACLR
+resetn => counter[6].ACLR
+resetn => counter[7].ACLR
+resetn => counter[8].ACLR
+resetn => counter[9].ACLR
+resetn => counter[10].ACLR
+resetn => counter[11].ACLR
+resetn => counter[12].ACLR
+resetn => counter[13].ACLR
+resetn => counter[14].ACLR
+resetn => counter[15].ACLR
+resetn => counter[16].ACLR
+resetn => counter[17].ACLR
+resetn => counter[18].ACLR
+resetn => counter[19].ACLR
+resetn => counter[20].ACLR
+resetn => counter[21].ACLR
+resetn => counter[22].ACLR
+resetn => counter[23].ACLR
+resetn => counter[24].ACLR
+resetn => counter[25].ACLR
+resetn => counter[26].ACLR
+resetn => counter[27].ACLR
+resetn => counter[28].ACLR
+resetn => counter[29].ACLR
+resetn => counter[30].ACLR
+resetn => counter[31].ACLR
+setNewMessageIntoBuffer <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|Message:m
+nextMessage => counter[1].LATCH_ENABLE
+nextMessage => counter[0].LATCH_ENABLE
+nextMessage => counter[2].LATCH_ENABLE
+nextMessage => counter[3].LATCH_ENABLE
+nextMessage => counter[4].LATCH_ENABLE
+nextMessage => counter[5].LATCH_ENABLE
+nextMessage => counter[6].LATCH_ENABLE
+nextMessage => counter[7].LATCH_ENABLE
+nextMessage => counter[8].LATCH_ENABLE
+nextMessage => counter[9].LATCH_ENABLE
+nextMessage => counter[10].LATCH_ENABLE
+nextMessage => counter[11].LATCH_ENABLE
+nextMessage => counter[12].LATCH_ENABLE
+nextMessage => counter[13].LATCH_ENABLE
+nextMessage => counter[14].LATCH_ENABLE
+nextMessage => counter[15].LATCH_ENABLE
+nextMessage => counter[16].LATCH_ENABLE
+nextMessage => counter[17].LATCH_ENABLE
+nextMessage => counter[18].LATCH_ENABLE
+nextMessage => counter[19].LATCH_ENABLE
+nextMessage => counter[20].LATCH_ENABLE
+nextMessage => counter[21].LATCH_ENABLE
+nextMessage => counter[22].LATCH_ENABLE
+nextMessage => counter[23].LATCH_ENABLE
+nextMessage => counter[24].LATCH_ENABLE
+nextMessage => counter[25].LATCH_ENABLE
+nextMessage => counter[26].LATCH_ENABLE
+nextMessage => counter[27].LATCH_ENABLE
+nextMessage => counter[28].LATCH_ENABLE
+nextMessage => counter[29].LATCH_ENABLE
+nextMessage => counter[30].LATCH_ENABLE
+nextMessage => counter[31].LATCH_ENABLE
+resetn => counter[1].PRESET
+resetn => counter[0].PRESET
+resetn => counter[2].PRESET
+resetn => counter[3].PRESET
+resetn => counter[4].PRESET
+resetn => counter[5].PRESET
+resetn => counter[6].PRESET
+resetn => counter[7].PRESET
+resetn => counter[8].PRESET
+resetn => counter[9].PRESET
+resetn => counter[10].PRESET
+resetn => counter[11].PRESET
+resetn => counter[12].PRESET
+resetn => counter[13].PRESET
+resetn => counter[14].PRESET
+resetn => counter[15].PRESET
+resetn => counter[16].PRESET
+resetn => counter[17].PRESET
+resetn => counter[18].PRESET
+resetn => counter[19].PRESET
+resetn => counter[20].PRESET
+resetn => counter[21].PRESET
+resetn => counter[22].PRESET
+resetn => counter[23].PRESET
+resetn => counter[24].PRESET
+resetn => counter[25].PRESET
+resetn => counter[26].PRESET
+resetn => counter[27].PRESET
+resetn => counter[28].PRESET
+resetn => counter[29].PRESET
+resetn => counter[30].PRESET
+resetn => counter[31].PRESET
+message[9] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[8] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[7] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[6] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[5] <= <GND>
+message[4] <= <GND>
+message[3] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[2] <= <GND>
+message[1] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[0] <= message.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|Header:h
+messageBeforeHeader[9] => transmissionBus[12].DATAIN
+messageBeforeHeader[8] => transmissionBus[11].DATAIN
+messageBeforeHeader[7] => transmissionBus[10].DATAIN
+messageBeforeHeader[6] => transmissionBus[9].DATAIN
+messageBeforeHeader[5] => transmissionBus[8].DATAIN
+messageBeforeHeader[4] => transmissionBus[7].DATAIN
+messageBeforeHeader[3] => transmissionBus[6].DATAIN
+messageBeforeHeader[2] => transmissionBus[5].DATAIN
+messageBeforeHeader[1] => Equal0.IN0
+messageBeforeHeader[1] => Equal1.IN1
+messageBeforeHeader[1] => Equal2.IN1
+messageBeforeHeader[0] => Equal0.IN1
+messageBeforeHeader[0] => Equal1.IN0
+messageBeforeHeader[0] => Equal2.IN0
+transmissionBus[12] <= messageBeforeHeader[9].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[11] <= messageBeforeHeader[8].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[10] <= messageBeforeHeader[7].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[9] <= messageBeforeHeader[6].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[8] <= messageBeforeHeader[5].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[7] <= messageBeforeHeader[4].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[6] <= messageBeforeHeader[3].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[5] <= messageBeforeHeader[2].DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[4] <= transmissionBus[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[3] <= transmissionBus[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[2] <= transmissionBus[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+transmissionBus[1] <= <VCC>
+transmissionBus[0] <= transmissionBus[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t
+clk => flipFlop:f0.clk
+clk => flipFlop:f1.clk
+clk => flipFlop:f2.clk
+clk => flipFlop:f3.clk
+clk => flipFlop:f4.clk
+clk => flipFlop:f5.clk
+clk => flipFlop:f6.clk
+clk => flipFlop:f7.clk
+clk => flipFlop:f8.clk
+clk => flipFlop:f9.clk
+clk => flipFlop:f10.clk
+clk => flipFlop:f11.clk
+clk => flipFlop:f12.clk
+clk => flipFlop:serial.clk
+resetn => flipFlop:f0.resetn
+resetn => flipFlop:f1.resetn
+resetn => flipFlop:f2.resetn
+resetn => flipFlop:f3.resetn
+resetn => flipFlop:f4.resetn
+resetn => flipFlop:f5.resetn
+resetn => flipFlop:f6.resetn
+resetn => flipFlop:f7.resetn
+resetn => flipFlop:f8.resetn
+resetn => flipFlop:f9.resetn
+resetn => flipFlop:f10.resetn
+resetn => flipFlop:f11.resetn
+resetn => flipFlop:f12.resetn
+resetn => flipFlop:serial.resetn
+set => flipFlop:f0.set
+set => flipFlop:f1.set
+set => flipFlop:f2.set
+set => flipFlop:f3.set
+set => flipFlop:f4.set
+set => flipFlop:f5.set
+set => flipFlop:f6.set
+set => flipFlop:f7.set
+set => flipFlop:f8.set
+set => flipFlop:f9.set
+set => flipFlop:f10.set
+set => flipFlop:f11.set
+set => flipFlop:f12.set
+transmissionBuffer[0] => flipFlop:f0.setIn
+transmissionBuffer[1] => flipFlop:f1.setIn
+transmissionBuffer[2] => flipFlop:f2.setIn
+transmissionBuffer[3] => flipFlop:f3.setIn
+transmissionBuffer[4] => flipFlop:f4.setIn
+transmissionBuffer[5] => flipFlop:f5.setIn
+transmissionBuffer[6] => flipFlop:f6.setIn
+transmissionBuffer[7] => flipFlop:f7.setIn
+transmissionBuffer[8] => flipFlop:f8.setIn
+transmissionBuffer[9] => flipFlop:f9.setIn
+transmissionBuffer[10] => flipFlop:f10.setIn
+transmissionBuffer[11] => flipFlop:f11.setIn
+transmissionBuffer[12] => flipFlop:f12.setIn
+bitSerial <= flipFlop:serial.dataOut
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f0
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f1
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f2
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f3
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f4
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f5
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f6
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f7
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f8
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f9
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f10
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f11
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f12
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:serial
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d
+clk => Receptor:r.clk
+clk => DetectorController:c.clk
+resetn => Receptor:r.resetn
+resetn => DetectorController:c.resetn
+input => Receptor:r.bitSerial
+seqdec[7] <= Decodificador:d.decodedMessage[7]
+seqdec[6] <= Decodificador:d.decodedMessage[6]
+seqdec[5] <= Decodificador:d.decodedMessage[5]
+seqdec[4] <= Decodificador:d.decodedMessage[4]
+seqdec[3] <= Decodificador:d.decodedMessage[3]
+seqdec[2] <= Decodificador:d.decodedMessage[2]
+seqdec[1] <= Decodificador:d.decodedMessage[1]
+seqdec[0] <= Decodificador:d.decodedMessage[0]
+valid_out <= DetectorController:c.validOut
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r
+clk => flipFlop:f0.clk
+clk => flipFlop:f1.clk
+clk => flipFlop:f2.clk
+clk => flipFlop:f3.clk
+clk => flipFlop:f4.clk
+clk => flipFlop:f5.clk
+clk => flipFlop:f6.clk
+clk => flipFlop:f7.clk
+clk => flipFlop:f8.clk
+clk => flipFlop:f9.clk
+clk => flipFlop:f10.clk
+clk => flipFlop:f11.clk
+clk => flipFlop:f12.clk
+bitSerial => flipFlop:f0.dataIn
+resetn => flipFlop:f0.resetn
+resetn => flipFlop:f1.resetn
+resetn => flipFlop:f2.resetn
+resetn => flipFlop:f3.resetn
+resetn => flipFlop:f4.resetn
+resetn => flipFlop:f5.resetn
+resetn => flipFlop:f6.resetn
+resetn => flipFlop:f7.resetn
+resetn => flipFlop:f8.resetn
+resetn => flipFlop:f9.resetn
+resetn => flipFlop:f10.resetn
+resetn => flipFlop:f11.resetn
+resetn => flipFlop:f12.resetn
+messageBus[0] <= flipFlop:f0.dataOut
+messageBus[1] <= flipFlop:f1.dataOut
+messageBus[2] <= flipFlop:f2.dataOut
+messageBus[3] <= flipFlop:f3.dataOut
+messageBus[4] <= flipFlop:f4.dataOut
+messageBus[5] <= flipFlop:f5.dataOut
+messageBus[6] <= flipFlop:f6.dataOut
+messageBus[7] <= flipFlop:f7.dataOut
+messageBus[8] <= flipFlop:f8.dataOut
+messageBus[9] <= flipFlop:f9.dataOut
+messageBus[10] <= flipFlop:f10.dataOut
+messageBus[11] <= flipFlop:f11.dataOut
+messageBus[12] <= flipFlop:f12.dataOut
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f0
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f1
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f2
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f3
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f4
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f5
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f6
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f7
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f8
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f9
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f10
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f11
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f12
+dataIn => data.DATAIN
+clk => data.CLK
+resetn => data.IN0
+resetn => data.ACLR
+setIn => data.ADATA
+set => data.IN1
+dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|DetectorController:c
+clk => validOut~reg0.CLK
+clk => headerFound.CLK
+clk => countClock[0].CLK
+clk => countClock[1].CLK
+clk => countClock[2].CLK
+clk => countClock[3].CLK
+clk => countClock[4].CLK
+clk => countClock[5].CLK
+clk => countClock[6].CLK
+clk => countClock[7].CLK
+clk => countClock[8].CLK
+clk => countClock[9].CLK
+clk => countClock[10].CLK
+clk => countClock[11].CLK
+clk => countClock[12].CLK
+clk => countClock[13].CLK
+clk => countClock[14].CLK
+clk => countClock[15].CLK
+clk => countClock[16].CLK
+clk => countClock[17].CLK
+clk => countClock[18].CLK
+clk => countClock[19].CLK
+clk => countClock[20].CLK
+clk => countClock[21].CLK
+clk => countClock[22].CLK
+clk => countClock[23].CLK
+clk => countClock[24].CLK
+clk => countClock[25].CLK
+clk => countClock[26].CLK
+clk => countClock[27].CLK
+clk => countClock[28].CLK
+clk => countClock[29].CLK
+clk => countClock[30].CLK
+clk => countClock[31].CLK
+resetn => headerFound.ACLR
+resetn => countClock[0].ACLR
+resetn => countClock[1].ACLR
+resetn => countClock[2].ACLR
+resetn => countClock[3].ACLR
+resetn => countClock[4].ACLR
+resetn => countClock[5].ACLR
+resetn => countClock[6].ACLR
+resetn => countClock[7].ACLR
+resetn => countClock[8].ACLR
+resetn => countClock[9].ACLR
+resetn => countClock[10].ACLR
+resetn => countClock[11].ACLR
+resetn => countClock[12].ACLR
+resetn => countClock[13].ACLR
+resetn => countClock[14].ACLR
+resetn => countClock[15].ACLR
+resetn => countClock[16].ACLR
+resetn => countClock[17].ACLR
+resetn => countClock[18].ACLR
+resetn => countClock[19].ACLR
+resetn => countClock[20].ACLR
+resetn => countClock[21].ACLR
+resetn => countClock[22].ACLR
+resetn => countClock[23].ACLR
+resetn => countClock[24].ACLR
+resetn => countClock[25].ACLR
+resetn => countClock[26].ACLR
+resetn => countClock[27].ACLR
+resetn => countClock[28].ACLR
+resetn => countClock[29].ACLR
+resetn => countClock[30].ACLR
+resetn => countClock[31].ACLR
+resetn => validOut~reg0.ENA
+messageBuffer[0] => Equal0.IN4
+messageBuffer[0] => Equal1.IN4
+messageBuffer[0] => Equal2.IN1
+messageBuffer[1] => Equal0.IN1
+messageBuffer[1] => Equal1.IN3
+messageBuffer[1] => Equal2.IN4
+messageBuffer[2] => Equal0.IN0
+messageBuffer[2] => Equal1.IN1
+messageBuffer[2] => Equal2.IN3
+messageBuffer[3] => Equal0.IN3
+messageBuffer[3] => Equal1.IN2
+messageBuffer[3] => Equal2.IN2
+messageBuffer[4] => Equal0.IN2
+messageBuffer[4] => Equal1.IN0
+messageBuffer[4] => Equal2.IN0
+messageBuffer[5] => ~NO_FANOUT~
+messageBuffer[6] => ~NO_FANOUT~
+messageBuffer[7] => ~NO_FANOUT~
+messageBuffer[8] => ~NO_FANOUT~
+messageBuffer[9] => ~NO_FANOUT~
+messageBuffer[10] => ~NO_FANOUT~
+messageBuffer[11] => ~NO_FANOUT~
+messageBuffer[12] => ~NO_FANOUT~
+validOut <= validOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DetectorAndGenerator|Detector:d|Decodificador:d
+messageBus[12] => ~NO_FANOUT~
+messageBus[11] => ~NO_FANOUT~
+messageBus[10] => ~NO_FANOUT~
+messageBus[9] => decodedMessage.IN0
+messageBus[9] => decodedMessage.IN0
+messageBus[9] => decodedMessage.IN0
+messageBus[9] => decodedMessage.IN0
+messageBus[8] => decodedMessage.IN0
+messageBus[7] => decodedMessage.IN0
+messageBus[6] => decodedMessage.IN0
+messageBus[5] => decodedMessage.IN0
+messageBus[4] => decodedMessage.IN1
+messageBus[3] => decodedMessage.IN1
+messageBus[2] => decodedMessage.IN1
+messageBus[2] => decodedMessage.IN1
+messageBus[1] => decodedMessage.IN1
+messageBus[1] => decodedMessage.IN1
+messageBus[0] => decodedMessage.IN1
+messageBus[0] => decodedMessage.IN1
+decodedMessage[7] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[6] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[5] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[4] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[3] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[2] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[1] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+decodedMessage[0] <= decodedMessage.DB_MAX_OUTPUT_PORT_TYPE
+
+
