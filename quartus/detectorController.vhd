@@ -24,11 +24,11 @@ BEGIN
     ELSIF rising_edge(clk) THEN
       countClock := countClock + 1;
       IF messageBuffer(4 downto 0) = "11001" OR messageBuffer(4 downto 0) = "01011" OR messageBuffer(4 downto 0) = "01110" THEN --Found header 
-        countClock := 5;
+        countClock := 4;
         headerFound := '1';
       END IF;
 
-      IF countClock = 12 AND headerFound = '1' THEN -- Recieve a message
+      IF countClock = 11 AND headerFound = '1' THEN -- Recieve a message
         validOut <= '1';
         countClock := 0;
         headerFound := '0';

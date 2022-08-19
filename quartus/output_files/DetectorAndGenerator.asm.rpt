@@ -1,5 +1,5 @@
 Assembler report for DetectorAndGenerator
-Sun Aug 07 19:17:52 2022
+Tue Aug 16 20:17:22 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Aug 07 19:17:52 2022 ;
+; Assembler Status      ; Successful - Tue Aug 16 20:17:22 2022 ;
 ; Revision Name         ; DetectorAndGenerator                  ;
 ; Top-level Entity Name ; DetectorAndGenerator                  ;
 ; Family                ; Cyclone V                             ;
@@ -92,8 +92,8 @@ applicable agreement for further details.
 ; Option         ; Setting                                                                                                  ;
 +----------------+----------------------------------------------------------------------------------------------------------+
 ; Device         ; 5CGXFC7C7F23C8                                                                                           ;
-; JTAG usercode  ; 0x00EF9AF1                                                                                               ;
-; Checksum       ; 0x00EF9AF1                                                                                               ;
+; JTAG usercode  ; 0x00F01BFB                                                                                               ;
+; Checksum       ; 0x00F01BFB                                                                                               ;
 +----------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Aug 07 19:17:45 2022
+    Info: Processing started: Tue Aug 16 20:17:13 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DetectorAndGenerator -c DetectorAndGenerator
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4790 megabytes
-    Info: Processing ended: Sun Aug 07 19:17:52 2022
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Tue Aug 16 20:17:22 2022
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:07
 
 

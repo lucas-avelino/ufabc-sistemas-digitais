@@ -44,6 +44,13 @@
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Header
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/g/transmissionBus: Unrecognized dataset prefix: sim
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/d/c/line__16/countClock: Unrecognized dataset prefix: sim
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/d/c/line__16/headerFound: Unrecognized dataset prefix: sim
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/d/valid_out: Unrecognized dataset prefix: sim
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/g/control/setNewMessageIntoBuffer: Unrecognized dataset prefix: sim
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/d/c/messageBuffer: Unrecognized dataset prefix: sim
+# Paste insertion failed: sim:/detectorandgenerator_vhd_tst/i1/g/m/line__14/counter: Unrecognized dataset prefix: sim
 # -- Compiling architecture arch of Header
 # vcom -93 -work work {D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/transmissor.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -101,19 +108,6 @@ vcom -reportprogress 300 -work work D:/Externo/Projetos/UFABC/ufabc-sistemas-dig
 # ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-vcom -reportprogress 300 -work work D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity DetectorAndGenerator_vhd_tst
-# -- Compiling architecture DetectorAndGenerator_arch of DetectorAndGenerator_vhd_tst
-# ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(71): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartus/simulation/modelsim/DetectorAndGenerator.vht(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 vsim work.detectorandgenerator_vhd_tst
 # vsim work.detectorandgenerator_vhd_tst 
 # Loading std.standard
@@ -131,13 +125,30 @@ vsim work.detectorandgenerator_vhd_tst
 # Loading work.receptor(arch)
 # Loading work.detectorcontroller(arch)
 # Loading work.decodificador(arch)
+run -all
+restart
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/clk
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/resetn
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/seq
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/nextMessage
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/messageWithoutHeader
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/transmissionBus
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/clk
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/resetn
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/seq
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/nextMessage
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/messageWithoutHeader
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/transmissionBus
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/clk
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/resetn
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/input
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/seqdec
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/valid_out
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/messageBus
+run -all
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/g/seq
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/c/line__16/countClock
 add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/c/line__16/headerFound
-add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/c/line__16/a
-run -all
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/d/messageBus
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/d/decodedMessage
+add wave -position end  sim:/detectorandgenerator_vhd_tst/i1/d/c/validOut

@@ -94,8 +94,18 @@ setNewMessageIntoBuffer <= state.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|Message:m
-nextMessage => counter[1].LATCH_ENABLE
+nextMessage => message[1]$latch.LATCH_ENABLE
+nextMessage => message[2]$latch.LATCH_ENABLE
+nextMessage => message[3]$latch.LATCH_ENABLE
+nextMessage => message[4]$latch.LATCH_ENABLE
+nextMessage => message[5]$latch.LATCH_ENABLE
+nextMessage => message[6]$latch.LATCH_ENABLE
+nextMessage => message[7]$latch.LATCH_ENABLE
+nextMessage => message[8]$latch.LATCH_ENABLE
+nextMessage => message[9]$latch.LATCH_ENABLE
+nextMessage => message[0]$latch.LATCH_ENABLE
 nextMessage => counter[0].LATCH_ENABLE
+nextMessage => counter[1].LATCH_ENABLE
 nextMessage => counter[2].LATCH_ENABLE
 nextMessage => counter[3].LATCH_ENABLE
 nextMessage => counter[4].LATCH_ENABLE
@@ -126,8 +136,18 @@ nextMessage => counter[28].LATCH_ENABLE
 nextMessage => counter[29].LATCH_ENABLE
 nextMessage => counter[30].LATCH_ENABLE
 nextMessage => counter[31].LATCH_ENABLE
-resetn => counter[1].PRESET
+resetn => message[1]$latch.ACLR
+resetn => message[2]$latch.PRESET
+resetn => message[3]$latch.PRESET
+resetn => message[4]$latch.PRESET
+resetn => message[5]$latch.PRESET
+resetn => message[6]$latch.PRESET
+resetn => message[7]$latch.PRESET
+resetn => message[8]$latch.PRESET
+resetn => message[9]$latch.PRESET
+resetn => message[0]$latch.ACLR
 resetn => counter[0].PRESET
+resetn => counter[1].PRESET
 resetn => counter[2].PRESET
 resetn => counter[3].PRESET
 resetn => counter[4].PRESET
@@ -158,16 +178,16 @@ resetn => counter[28].PRESET
 resetn => counter[29].PRESET
 resetn => counter[30].PRESET
 resetn => counter[31].PRESET
-message[9] <= message.DB_MAX_OUTPUT_PORT_TYPE
-message[8] <= message.DB_MAX_OUTPUT_PORT_TYPE
-message[7] <= message.DB_MAX_OUTPUT_PORT_TYPE
-message[6] <= message.DB_MAX_OUTPUT_PORT_TYPE
-message[5] <= <GND>
-message[4] <= <GND>
-message[3] <= message.DB_MAX_OUTPUT_PORT_TYPE
-message[2] <= <GND>
-message[1] <= message.DB_MAX_OUTPUT_PORT_TYPE
-message[0] <= message.DB_MAX_OUTPUT_PORT_TYPE
+message[9] <= message[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[8] <= message[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[7] <= message[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[6] <= message[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[5] <= message[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[4] <= message[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[3] <= message[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[2] <= message[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[1] <= message[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+message[0] <= message[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|Header:h
@@ -261,140 +281,126 @@ bitSerial <= flipFlop:serial.dataOut
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f0
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f1
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f2
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f3
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f4
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f5
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f6
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f7
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f8
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f9
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f10
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f11
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f12
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:serial
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -461,130 +467,117 @@ messageBus[12] <= flipFlop:f12.dataOut
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f0
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f1
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f2
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f3
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f4
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f5
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f6
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f7
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f8
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f9
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f10
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f11
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f12
 dataIn => data.DATAIN
 clk => data.CLK
-resetn => data.IN0
-resetn => data.ACLR
+resetn => ~NO_FANOUT~
 setIn => data.ADATA
-set => data.IN1
+set => data.ALOAD
 dataOut <= data.DB_MAX_OUTPUT_PORT_TYPE
 
 

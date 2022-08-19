@@ -1,0 +1,425 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Externo\Projetos\UFABC\ufabc-sistemas-digitais\quartusProject\simulation\modelsim
+Edecodificador
+Z1 w1660355871
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dD:\Externo\Projetos\UFABC\ufabc-sistemas-digitais\quartusProject\simulation\modelsim
+Z5 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/decodificador.vhd
+Z6 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/decodificador.vhd
+l0
+L4
+V_NH_40o1@O7>NOnS2W2bb3
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1660691519.062000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/decodificador.vhd|
+Z10 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/decodificador.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 U[@GkgKlj;CK>QMJVJL:P3
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 13 decodificador 0 22 _NH_40o1@O7>NOnS2W2bb3
+l12
+L11
+Va_8]fZcW8]66o>:[9Oh:C0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 f2CQ9cUzAel5lYQ8>5zXX3
+!i10b 1
+Edetector
+R1
+R2
+R3
+R4
+Z13 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detector.vhd
+Z14 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detector.vhd
+l0
+L4
+VldK7Uf=in93UMSafZJkT72
+R7
+31
+Z15 !s108 1660691517.268000
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detector.vhd|
+Z17 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detector.vhd|
+R11
+R12
+!s100 747X70UXJf?dff:3BTm<Z0
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 8 detector 0 22 ldK7Uf=in93UMSafZJkT72
+l38
+L14
+V^3PRe@FQDFe<h^@]E5ijO0
+R7
+31
+R15
+R16
+R17
+R11
+R12
+!s100 ho8?GVdcWON9H`d;fPZBC0
+!i10b 1
+Edetectorandgenerator
+R1
+R2
+R3
+R4
+Z18 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorandgenerator.vhd
+Z19 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorandgenerator.vhd
+l0
+L4
+V9Ba`;:C<=MzhE<IEHI3R52
+R7
+31
+Z20 !s108 1660691513.292000
+Z21 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorandgenerator.vhd|
+Z22 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorandgenerator.vhd|
+R11
+R12
+!s100 WngR]U0o:JM1_f>c7Klk=0
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 20 detectorandgenerator 0 22 9Ba`;:C<=MzhE<IEHI3R52
+l32
+L12
+VJGE6I]ESJK34ZbJ1lUogV1
+R7
+31
+R20
+R21
+R22
+R11
+R12
+!s100 RYW2dHlo;_TQC>9:5TdI`2
+!i10b 1
+Edetectorandgenerator_vhd_tst
+Z23 w1660355873
+R2
+R3
+R4
+Z24 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/simulation/modelsim/DetectorAndGenerator.vht
+Z25 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/simulation/modelsim/DetectorAndGenerator.vht
+l0
+L30
+VoVUAZD?9`bjmb4;9hLXAg3
+!s100 fe1m3^OlUY[SglDDzBD8E2
+R7
+32
+!i10b 1
+Z26 !s108 1660691522.896000
+Z27 !s90 -reportprogress|300|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/simulation/modelsim/DetectorAndGenerator.vht|
+Z28 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/simulation/modelsim/DetectorAndGenerator.vht|
+Z29 o-work work -O0
+R12
+Adetectorandgenerator_arch
+R2
+R3
+Z30 DEx4 work 28 detectorandgenerator_vhd_tst 0 22 oVUAZD?9`bjmb4;9hLXAg3
+l47
+L32
+Z31 VfjQQ<NfJ^m0ojE^g9dL=z3
+Z32 !s100 d`2<2:OJfg0O93_30UPOV1
+R7
+32
+!i10b 1
+R26
+R27
+R28
+R29
+R12
+Edetectorcontroller
+R1
+R2
+R3
+R4
+Z33 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorcontroller.vhd
+Z34 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorcontroller.vhd
+l0
+L4
+VYk8_;l39GflT:Ih3HS0VJ1
+R7
+31
+Z35 !s108 1660691518.745000
+Z36 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorcontroller.vhd|
+Z37 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/detectorcontroller.vhd|
+R11
+R12
+!s100 Yj]AFmI1dRV=5:hTb_>jT1
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 18 detectorcontroller 0 22 Yk8_;l39GflT:Ih3HS0VJ1
+l14
+L12
+VR<RCzQ]HVJ4:hZU67_fE33
+R7
+31
+R35
+R36
+R37
+R11
+R12
+!s100 AYl0<`LOJzTi[[]Y`979e2
+!i10b 1
+Eflipflop
+R1
+R2
+R3
+R4
+Z38 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/flipflop.vhd
+Z39 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/flipflop.vhd
+l0
+L4
+V@k6kPgDUFJAeY61Y7[TEP2
+R7
+31
+Z40 !s108 1660691517.004000
+Z41 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/flipflop.vhd|
+Z42 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/flipflop.vhd|
+R11
+R12
+!s100 la_5d>k_7QdL:FZH9Q>n70
+!i10b 1
+Abehaviour
+R2
+R3
+DEx4 work 8 flipflop 0 22 @k6kPgDUFJAeY61Y7[TEP2
+l12
+L11
+V3=lAi6jj36:Sg0WOfToz41
+R7
+31
+R40
+R41
+R42
+R11
+R12
+!s100 6DA4NTN;iYB:m4>oJHe?Q1
+!i10b 1
+Egeneratorcontroller
+R1
+R2
+R3
+R4
+Z43 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/generatorcontroller.vhd
+Z44 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/generatorcontroller.vhd
+l0
+L4
+VTN]87]Wg=m=GK3dG1aOFc0
+R7
+31
+Z45 !s108 1660691515.549000
+Z46 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/generatorcontroller.vhd|
+Z47 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/generatorcontroller.vhd|
+R11
+R12
+!s100 Eco5N`zn3Zh93<:A5GzbZ0
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 19 generatorcontroller 0 22 TN]87]Wg=m=GK3dG1aOFc0
+l13
+L12
+VO[YRjYUU9M2b8@7Y]1>AN3
+R7
+31
+R45
+R46
+R47
+R11
+R12
+!s100 AV]XMDJFhVAX04Ij9Rbz=0
+!i10b 1
+Egerador
+R1
+R2
+R3
+R4
+Z48 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/gerador.vhd
+Z49 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/gerador.vhd
+l0
+L4
+V;zjEk9ldkz20OT1ZQ5OM=3
+R7
+31
+Z50 !s108 1660691513.787000
+Z51 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/gerador.vhd|
+Z52 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/gerador.vhd|
+R11
+R12
+!s100 JNOcdimnWd`bFzKKMT59P3
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 7 gerador 0 22 ;zjEk9ldkz20OT1ZQ5OM=3
+l45
+L12
+VVVg;VaO4k1`WP3lbEFo@61
+R7
+31
+R50
+R51
+R52
+R11
+R12
+!s100 OFHSK@l2z6FP`OE[5]9o^1
+!i10b 1
+Eheader
+R1
+R2
+R3
+R4
+Z53 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/header.vhd
+Z54 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/header.vhd
+l0
+L4
+V3BcbQV:0<45T4_[[5@cWz0
+R7
+31
+Z55 !s108 1660691516.362000
+Z56 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/header.vhd|
+Z57 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/header.vhd|
+R11
+R12
+!s100 nzP_9ZG>PWJcH^fCd3>HA1
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 6 header 0 22 3BcbQV:0<45T4_[[5@cWz0
+l12
+L11
+VOG_A5kiiW<FUb;0`;:E]^1
+R7
+31
+R55
+R56
+R57
+R11
+R12
+!s100 0OShn@3k=k4Y>GM0a;6kc3
+!i10b 1
+Emessage
+R1
+R2
+R3
+R4
+Z58 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/message.vhd
+Z59 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/message.vhd
+l0
+L4
+VMikh@6h4K?YC;_IVeI?Vb3
+R7
+31
+Z60 !s108 1660691516.096000
+Z61 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/message.vhd|
+Z62 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/message.vhd|
+R11
+R12
+!s100 cjnQH=5BBaFbl`E^FTkNE1
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 7 message 0 22 Mikh@6h4K?YC;_IVeI?Vb3
+l12
+L11
+V?ASQn8JV9@bCW@1Q<6>f50
+R7
+31
+R60
+R61
+R62
+R11
+R12
+!s100 C74NM[8?DP[B08iD1bQXY0
+!i10b 1
+Ereceptor
+R1
+R2
+R3
+R4
+Z63 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/receptor.vhd
+Z64 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/receptor.vhd
+l0
+L4
+V6nlLClEBlK;zOoN?MYUEi2
+R7
+31
+Z65 !s108 1660691518.237000
+Z66 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/receptor.vhd|
+Z67 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/receptor.vhd|
+R11
+R12
+!s100 SRPofLR0K3dkmDe_gVe1Z2
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 8 receptor 0 22 6nlLClEBlK;zOoN?MYUEi2
+l19
+L11
+VNaTD^?MMU`n>iKU_4P7zb2
+R7
+31
+R65
+R66
+R67
+R11
+R12
+!s100 ?46BOZ9]M7VhHSo5T1e7P0
+!i10b 1
+Etransmissor
+R1
+R2
+R3
+R4
+Z68 8D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/transmissor.vhd
+Z69 FD:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/transmissor.vhd
+l0
+L4
+Vik=H2?:3OFo^nboV:Xoj;3
+R7
+31
+Z70 !s108 1660691516.677000
+Z71 !s90 -reportprogress|300|-93|-work|work|D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/transmissor.vhd|
+Z72 !s107 D:/Externo/Projetos/UFABC/ufabc-sistemas-digitais/quartusProject/transmissor.vhd|
+R11
+R12
+!s100 a;zgEE1<knIeDEn1ei3>B2
+!i10b 1
+Aarch
+R2
+R3
+DEx4 work 11 transmissor 0 22 ik=H2?:3OFo^nboV:Xoj;3
+l20
+L12
+V1eO^KU49;hJ`U?ZRf[iHH2
+R7
+31
+R70
+R71
+R72
+R11
+R12
+!s100 7kK?P_bGP@5mDedDPCjWI2
+!i10b 1

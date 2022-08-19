@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DetectorAndGenerator
-Sun Aug 07 19:17:18 2022
+Tue Aug 16 20:16:41 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Aug 07 19:17:18 2022      ;
+; Analysis & Synthesis Status     ; Successful - Tue Aug 16 20:16:41 2022      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; DetectorAndGenerator                       ;
 ; Top-level Entity Name           ; DetectorAndGenerator                       ;
@@ -207,23 +207,23 @@ applicable agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 123          ;
+; Estimate of Logic utilization (ALMs needed) ; 137          ;
 ;                                             ;              ;
-; Combinational ALUT usage for logic          ; 226          ;
+; Combinational ALUT usage for logic          ; 256          ;
 ;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 18           ;
-;     -- 5 input functions                    ; 13           ;
-;     -- 4 input functions                    ; 44           ;
-;     -- <=3 input functions                  ; 151          ;
+;     -- 6 input functions                    ; 16           ;
+;     -- 5 input functions                    ; 7            ;
+;     -- 4 input functions                    ; 93           ;
+;     -- <=3 input functions                  ; 140          ;
 ;                                             ;              ;
 ; Dedicated logic registers                   ; 94           ;
 ;                                             ;              ;
 ; I/O pins                                    ; 11           ;
 ; Total DSP Blocks                            ; 0            ;
 ; Maximum fan-out node                        ; resetn~input ;
-; Maximum fan-out                             ; 133          ;
-; Total fan-out                               ; 1018         ;
-; Average fan-out                             ; 2.98         ;
+; Maximum fan-out                             ; 107          ;
+; Total fan-out                               ; 1180         ;
+; Average fan-out                             ; 3.17         ;
 +---------------------------------------------+--------------+
 
 
@@ -232,7 +232,7 @@ applicable agreement for further details.
 +-------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node          ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
 +-------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------------------------------------------+--------------+
-; |DetectorAndGenerator               ; 226 (0)           ; 94 (0)       ; 0                 ; 0          ; 11   ; 0            ; |DetectorAndGenerator                                         ; work         ;
+; |DetectorAndGenerator               ; 256 (0)           ; 94 (0)       ; 0                 ; 0          ; 11   ; 0            ; |DetectorAndGenerator                                         ; work         ;
 ;    |Detector:d|                     ; 83 (0)            ; 47 (0)       ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|Detector:d                              ; work         ;
 ;       |Decodificador:d|             ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|Detector:d|Decodificador:d              ; work         ;
 ;       |DetectorController:c|        ; 75 (75)           ; 34 (34)      ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|Detector:d|DetectorController:c         ; work         ;
@@ -250,22 +250,22 @@ applicable agreement for further details.
 ;          |flipFlop:f7|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f7       ; work         ;
 ;          |flipFlop:f8|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f8       ; work         ;
 ;          |flipFlop:f9|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|Detector:d|Receptor:r|flipFlop:f9       ; work         ;
-;    |gerador:g|                      ; 143 (0)           ; 47 (0)       ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g                               ; work         ;
+;    |gerador:g|                      ; 173 (0)           ; 47 (0)       ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g                               ; work         ;
 ;       |GeneratorController:control| ; 40 (40)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|GeneratorController:control   ; work         ;
-;       |Header:h|                    ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|Header:h                      ; work         ;
-;       |Message:m|                   ; 72 (72)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|Message:m                     ; work         ;
-;       |transmissor:t|               ; 29 (0)            ; 14 (0)       ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t                 ; work         ;
-;          |flipFlop:f0|              ; 1 (1)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f0     ; work         ;
+;       |Header:h|                    ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|Header:h                      ; work         ;
+;       |Message:m|                   ; 92 (92)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|Message:m                     ; work         ;
+;       |transmissor:t|               ; 33 (0)            ; 14 (0)       ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t                 ; work         ;
+;          |flipFlop:f0|              ; 2 (2)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f0     ; work         ;
 ;          |flipFlop:f10|             ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f10    ; work         ;
-;          |flipFlop:f11|             ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f11    ; work         ;
-;          |flipFlop:f12|             ; 5 (5)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f12    ; work         ;
-;          |flipFlop:f1|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f1     ; work         ;
-;          |flipFlop:f2|              ; 2 (2)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f2     ; work         ;
+;          |flipFlop:f11|             ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f11    ; work         ;
+;          |flipFlop:f12|             ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f12    ; work         ;
+;          |flipFlop:f1|              ; 2 (2)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f1     ; work         ;
+;          |flipFlop:f2|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f2     ; work         ;
 ;          |flipFlop:f3|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f3     ; work         ;
-;          |flipFlop:f4|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f4     ; work         ;
-;          |flipFlop:f5|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f5     ; work         ;
+;          |flipFlop:f4|              ; 2 (2)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f4     ; work         ;
+;          |flipFlop:f5|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f5     ; work         ;
 ;          |flipFlop:f6|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f6     ; work         ;
-;          |flipFlop:f7|              ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f7     ; work         ;
+;          |flipFlop:f7|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f7     ; work         ;
 ;          |flipFlop:f8|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f8     ; work         ;
 ;          |flipFlop:f9|              ; 3 (3)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:f9     ; work         ;
 ;          |flipFlop:serial|          ; 0 (0)             ; 1 (1)        ; 0                 ; 0          ; 0    ; 0            ; |DetectorAndGenerator|gerador:g|transmissor:t|flipFlop:serial ; work         ;
@@ -278,6 +278,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------+---------------------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal                         ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------------------------------+------------------------+
+; gerador:g|Header:h|transmissionBus[0]               ; GND                                         ; yes                    ;
+; gerador:g|Message:m|message[0]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[1]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Header:h|transmissionBus[2]               ; GND                                         ; yes                    ;
 ; gerador:g|Message:m|counter[31]                     ; gerador:g|GeneratorController:control|state ; yes                    ;
 ; gerador:g|Message:m|counter[30]                     ; gerador:g|GeneratorController:control|state ; yes                    ;
 ; gerador:g|Message:m|counter[29]                     ; gerador:g|GeneratorController:control|state ; yes                    ;
@@ -308,9 +312,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; gerador:g|Message:m|counter[4]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
 ; gerador:g|Message:m|counter[3]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
 ; gerador:g|Message:m|counter[2]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
-; gerador:g|Message:m|counter[0]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
 ; gerador:g|Message:m|counter[1]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
-; Number of user-specified and inferred latches = 32  ;                                             ;                        ;
+; gerador:g|Message:m|counter[0]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Header:h|transmissionBus[3]               ; GND                                         ; yes                    ;
+; gerador:g|Header:h|transmissionBus[4]               ; GND                                         ; yes                    ;
+; gerador:g|Message:m|message[2]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[3]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[4]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[5]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[6]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[7]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[8]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; gerador:g|Message:m|message[9]                      ; gerador:g|GeneratorController:control|state ; yes                    ;
+; Number of user-specified and inferred latches = 46  ;                                             ;                        ;
 +-----------------------------------------------------+---------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
@@ -323,7 +337,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Total registers                              ; 94    ;
 ; Number of registers using Synchronous Clear  ; 65    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 93    ;
+; Number of registers using Asynchronous Clear ; 79    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1     ;
 ; Number of registers using Preset             ; 0     ;
@@ -335,18 +349,21 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------------+---------+
 ; Inverted Register                           ; Fan out ;
 +---------------------------------------------+---------+
-; gerador:g|GeneratorController:control|state ; 33      ;
-; Total number of inverted registers = 1      ;         ;
+; gerador:g|GeneratorController:control|state ; 75      ;
+; gerador:g|transmissor:t|flipFlop:f11|data   ; 1       ;
+; Total number of inverted registers = 2      ;         ;
 +---------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DetectorAndGenerator|gerador:g|Message:m|message[3] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |DetectorAndGenerator|gerador:g|Message:m|message ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DetectorAndGenerator|gerador:g|Message:m|message ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; No         ; |DetectorAndGenerator|gerador:g|Message:m|counter ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -513,7 +530,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Aug 07 19:17:17 2022
+    Info: Processing started: Tue Aug 16 20:16:39 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DetectorAndGenerator -c DetectorAndGenerator
 Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -534,42 +551,57 @@ Warning (12125): Using design file message.vhd, which is not specified as a desi
     Info (12022): Found design unit 1: Message-arch
     Info (12023): Found entity 1: Message
 Info (12128): Elaborating entity "Message" for hierarchy "gerador:g|Message:m"
-Warning (10542): VHDL Variable Declaration warning at message.vhd(16): used initial value expression for variable "firstMessage" because variable was never assigned a value
-Warning (10542): VHDL Variable Declaration warning at message.vhd(17): used initial value expression for variable "secondMessage" because variable was never assigned a value
-Warning (10542): VHDL Variable Declaration warning at message.vhd(18): used initial value expression for variable "thirdMessage" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(16): used initial value expression for variable "message1" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(17): used initial value expression for variable "message2" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(18): used initial value expression for variable "message3" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(19): used initial value expression for variable "message4" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(20): used initial value expression for variable "message5" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(21): used initial value expression for variable "message6" because variable was never assigned a value
+Warning (10542): VHDL Variable Declaration warning at message.vhd(22): used initial value expression for variable "headerInData" because variable was never assigned a value
 Warning (10631): VHDL Process Statement warning at message.vhd(14): inferring latch(es) for signal or variable "counter", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "counter[0]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[1]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[2]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[3]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[4]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[5]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[6]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[7]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[8]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[9]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[10]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[11]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[12]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[13]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[14]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[15]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[16]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[17]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[18]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[19]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[20]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[21]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[22]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[23]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[24]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[25]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[26]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[27]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[28]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[29]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[30]" at message.vhd(20)
-Info (10041): Inferred latch for "counter[31]" at message.vhd(20)
+Warning (10631): VHDL Process Statement warning at message.vhd(14): inferring latch(es) for signal or variable "message", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "message[9]" at message.vhd(14)
+Info (10041): Inferred latch for "message[8]" at message.vhd(14)
+Info (10041): Inferred latch for "message[7]" at message.vhd(14)
+Info (10041): Inferred latch for "message[6]" at message.vhd(14)
+Info (10041): Inferred latch for "message[5]" at message.vhd(14)
+Info (10041): Inferred latch for "message[4]" at message.vhd(14)
+Info (10041): Inferred latch for "message[3]" at message.vhd(14)
+Info (10041): Inferred latch for "message[2]" at message.vhd(14)
+Info (10041): Inferred latch for "message[1]" at message.vhd(14)
+Info (10041): Inferred latch for "message[0]" at message.vhd(14)
+Info (10041): Inferred latch for "counter[0]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[1]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[2]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[3]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[4]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[5]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[6]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[7]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[8]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[9]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[10]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[11]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[12]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[13]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[14]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[15]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[16]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[17]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[18]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[19]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[20]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[21]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[22]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[23]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[24]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[25]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[26]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[27]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[28]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[29]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[30]" at message.vhd(24)
+Info (10041): Inferred latch for "counter[31]" at message.vhd(24)
 Warning (12125): Using design file header.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Header-arch
     Info (12023): Found entity 1: Header
@@ -602,33 +634,39 @@ Warning (12125): Using design file detectorcontroller.vhd, which is not specifie
     Info (12022): Found design unit 1: DetectorController-arch
     Info (12023): Found entity 1: DetectorController
 Info (12128): Elaborating entity "DetectorController" for hierarchy "Detector:d|DetectorController:c"
-Warning (10036): Verilog HDL or VHDL warning at detectorcontroller.vhd(19): object "a" assigned a value but never read
 Warning (12125): Using design file decodificador.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Decodificador-arch
     Info (12023): Found entity 1: Decodificador
 Info (12128): Elaborating entity "Decodificador" for hierarchy "Detector:d|Decodificador:d"
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "gerador:g|Message:m|message[5]" merged with LATCH primitive "gerador:g|Message:m|message[4]"
+    Info (13026): Duplicate LATCH primitive "gerador:g|Message:m|message[8]" merged with LATCH primitive "gerador:g|Message:m|message[7]"
+Info (13000): Registers with preset signals will power-up high
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
     Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f12|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f12|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f12|data~1"
-    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f11|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f11|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f11|data~1"
     Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f10|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f10|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f10|data~1"
     Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f9|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f9|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f9|data~1"
     Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f8|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f8|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f8|data~1"
+    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f7|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f7|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f7|data~1"
     Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f6|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f6|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f6|data~1"
+    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f5|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f5|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f5|data~1"
+    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f4|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f4|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f5|data~1"
     Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f3|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f3|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f3|data~1"
-    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f2|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f2|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f3|data~1"
-    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f1|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f1|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f1|data~1"
-    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f0|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f0|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f6|data~1"
+    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f2|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f2|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f2|data~1"
+    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f1|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f1|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f2|data~1"
+    Warning (13310): Register "gerador:g|transmissor:t|flipFlop:f0|data" is converted into an equivalent circuit using register "gerador:g|transmissor:t|flipFlop:f0|data~_emulated" and latch "gerador:g|transmissor:t|flipFlop:f0|data~1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 286 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 316 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 9 output pins
-    Info (21061): Implemented 275 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4763 megabytes
-    Info: Processing ended: Sun Aug 07 19:17:18 2022
-    Info: Elapsed time: 00:00:01
+    Info (21061): Implemented 305 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Tue Aug 16 20:16:41 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 
